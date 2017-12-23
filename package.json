@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "@thejameskyle/my-react",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Ideas for React APIs",
   "main": "lib/index.js",
   "repository": "https://github.com/thejameskyle/my-react",
