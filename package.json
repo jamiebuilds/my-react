@@ -1,0 +1,42 @@
+{
+  "private": false,
+  "name": "@thejameskyle/my-react",
+  "version": "0.0.0",
+  "description": "Ideas for React APIs",
+  "main": "lib/index.js",
+  "repository": "https://github.com/thejameskyle/my-react",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "files": ["lib"],
+  "keywords": ["react", "component", "ideas", "my-idea"],
+  "scripts": {
+    "format": "prettier --write '**/*.{js,json,md}'",
+    "flow": "flow status",
+    "test": "jest --coverage",
+    "build": "babel src -d lib",
+    "prepublish": "yarn build",
+    "precommit": "lint-staged"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "flow-bin": "^0.61.0",
+    "husky": "^0.14.3",
+    "jest": "^22.0.4",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": ["prettier --write", "git add"]
+  }
+}
