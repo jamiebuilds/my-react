@@ -14,7 +14,7 @@ const METHODS = [
 
 function wrap(inst) {
   METHODS.forEach(method => {
-    let prev = inst[method];
+    const prev = inst[method];
     if (prev) {
       inst[method] = (...args) => {
         return prev.call(inst, inst.props, inst.state, ...args);
